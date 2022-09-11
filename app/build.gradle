@@ -1,0 +1,27 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdk 30
+
+    defaultConfig {
+        //applicationId "com.microsoft.identity.client"
+        minSdk 21
+        targetSdk 30
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:customtabs:27.1.1'
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation 'com.nimbusds:nimbus-jose-jwt:5.7'
+    implementation 'com.microsoft.identity:common:0.0.7'
+}
